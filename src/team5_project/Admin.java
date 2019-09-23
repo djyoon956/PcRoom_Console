@@ -183,7 +183,7 @@ public class Admin {
 	}
 
 	private void showFileMenu() {
-		while (true) {
+		fileLoop : while (true) {
 			System.out.println("1. 회원 파일 저장");
 			System.out.println("2. 매출 파일 저장");
 			System.out.println("3. 이전 메뉴로 돌아가기");
@@ -197,7 +197,7 @@ public class Admin {
 				savePath = saveSalesInfoFile();
 				break;
 			case 3:
-				break;
+				break fileLoop;
 			}
 
 			System.out.println("파일 저장을 완료했습니다.");
